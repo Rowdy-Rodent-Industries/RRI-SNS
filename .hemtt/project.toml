@@ -1,0 +1,7 @@
+name = "Sequere Nos Aux"
+author = "RRI Dev Team"
+prefix = "rri"
+mainprefix = "z"
+
+[hemtt.release]
+archive = false # Default: true
