@@ -2,9 +2,9 @@ class RscDisplayMain
 {
 	class JoinServer
 	{
-		text = "41st Server";
-		action = "connectToServer ['216.245.176.164:2321']";
-		actionText = "Join the 41st Main Server!";
+		text = "Sequere Nos Server";
+		action = "connectToServer ['217.217.30.248:2342']";
+		actionText = "Join the Sequere Nos Main Server!";
 		condition = "true";
 	};
 };

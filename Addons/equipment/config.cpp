@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"rri_main"};
+        requiredAddons[] = {"cba_main", "ace_main"};
         author = AUTHOR;
         authors[] = {""};
         url = CSTRING(URL);
@@ -14,4 +14,7 @@ class CfgPatches {
     };
 };
 
-#include "CfgMainMenuSpotlight.hpp"
+#include "cfgvehicles.hpp"
+#include "cfgweapons.hpp"
+#include "cfgglasses.hpp"
+#include "xtdgearmodels.hpp"
