@@ -16,9 +16,9 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@Sequere Nos Corps Aux Mod";
-        name = "Sequere Nos Corps Aux Mod";
-        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        dir = "@Sequere Nos Aux Mod";
+        name = "Sequere Nos Aux Mod";
+        picture = QPATHTOEF(common,data\logo.paa);
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";

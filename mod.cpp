@@ -1,6 +1,6 @@
-name="TBD Aux Mod";
+name="Sequere Nos Aux Mod";
 author="RRI Dev Team";
-picture="Z\rri\Addons\common\data\rri_logo.paa";
+picture="logo.paa";
 overview="";
 hidePicture=0;
 hideName=0;

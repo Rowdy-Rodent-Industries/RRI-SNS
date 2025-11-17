@@ -32,6 +32,7 @@
 ace_hearing_lowerVolume = HEARING_MUFFLING
 
 #define BACKPACK_MAXLOAD 400
+#define BACKPACK_BIG_MAXLOAD 700
 #define LR_RANGE 25000
 
 #define UNIFORM_SUPPLYCLASS QUOTE(Supply120)
@@ -326,11 +327,28 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";\
 	tf_encryptionCode = "tf_west_radio_code";\
 	tf_hasLRradio = 1;\
-	tf_range = 25000;\
+	tf_range = LR_RANGE;\
 	tf_subtype = "digital_lr";\
 	maximumLoad = BACKPACK_MAXLOAD;\
 	class XtdGearInfo {\
 		model = QGVAR(##var1##);\
 		color = QUOTE(##var2##);\
+	};\
+}
+
+#define MACRO_BACKPACK_BIG(var1,var2,var3,var4) class GBACKPACK(##var1##_##var2##): USP_##var1##_##var2## {\
+	author=AUTHOR;\
+	displayName=QUOTE([SN] ##var3## (##var2##));\
+	tf_dialog = "rt1523g_radio_dialog";\
+	tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";\
+	tf_encryptionCode = "tf_west_radio_code";\
+	tf_hasLRradio = 1;\
+	tf_range = LR_RANGE;\
+	tf_subtype = "digital_lr";\
+	maximumLoad = BACKPACK_BIG_MAXLOAD;\
+	class XtdGearInfo {\
+		model = QGVAR(REEBOW_3DAP);\
+		color = QUOTE(##var2##);\
+		type = QUOTE(##var4##);\
 	};\
 }
