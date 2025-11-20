@@ -43,17 +43,17 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
         class HitpointsProtectionInfo {\
 			class Chest {\
 				HitpointName = "HitChest";\
-				armor = 9;\
+				armor = 12;\
 				PassThrough = 0.3;\
 			};\
 			class Legs {\
 				hitpointName = "HitLegs";\
-				armor = 9;\
+				armor = 12;\
 				passThrough = 0.3;\
 			};\
 			class Arms {\
 				hitpointName = "HitArms";\
-				armor = 4;\
+				armor = 8;\
 				passThrough = 0.3;\
 			};\
 		}
@@ -351,4 +351,37 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		color = QUOTE(##var2##);\
 		type = QUOTE(##var4##);\
 	};\
+}
+
+#define MACRO_TACTICLE_PACK(var1,var2,var3,var4) class GBACKPACK(##var1##_##var2##): USP_##var1##_##var2## {\
+	author=AUTHOR;\
+	displayName=QUOTE([SN] ##var3## (##var2##));\
+	tf_dialog = "rt1523g_radio_dialog";\
+	tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";\
+	tf_encryptionCode = "tf_west_radio_code";\
+	tf_hasLRradio = 1;\
+	tf_range = LR_RANGE;\
+	tf_subtype = "digital_lr";\
+	maximumLoad = BACKPACK_BIG_MAXLOAD;\
+	class XtdGearInfo {\
+		model = QGVAR(TACTICAL_PACK);\
+		color = QUOTE(##var2##);\
+		type = QUOTE(##var4##);\
+	};\
+}
+
+#define MACRO_VEST(var1,var2,var3,var4,var5) class GVEST(##var1##_##var2##): USP_##var1##_##var2## {\
+	author = AUTHOR;\
+    displayName = QUOTE([SN] ##var3## (##var2##));\
+    class ItemInfo: ItemInfo {\
+		containerClass = VEST_SUPPLYCLASS;\
+		mass = 80;\
+		VEST_PROTECTION;\
+	};\
+    class XtdGearInfo {\
+        model = QGVAR(CRYE_CPC);\
+        color = QUOTE(##var2##);\
+        type = QUOTE(##var4##);\
+		belt = QUOTE(##var5##);\
+    };\
 }

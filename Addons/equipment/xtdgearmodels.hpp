@@ -177,4 +177,47 @@ class XtdGearModels
             };
         };
     };
+    class CfgWeapons {
+        class GVAR(CRYE_CPC) {
+            label = "[SN] Crye CPC";
+            author = AUTHOR;
+            options[] = {"color","type","belt"};
+
+            class color {
+                changeingame = 0;
+                values[] = {"AOR2","MC","MCA","MCD","MCB",
+                    "MCT","RGR"
+                };
+
+                class AOR2 { label = "AOR2";};
+                class MC { label = "MC";};
+                class MCA { label = "MCA";};
+                class MCD { label = "MCD";};
+                class MCB { label = "MCB";};
+                class MCT { label = "MCT";};
+                class RGR { label = "RGR";};
+            };
+
+            class type {
+                changeingame = 0;
+                values[] = {"Base","Comms","Fast","Lead","Light","Medic","Weapons"};
+
+                class Base { label = "Base";};
+                class Comms { label = "Comms";};
+                class Fast { label = "Fast";};
+                class Lead { label = "Lead";};
+                class Light { label = "Light";};
+                class Medic { label = "Medic";};
+                class Weapons { label = "Weapons";};
+            };
+
+            class Belt {
+                changeingame = 0;
+                values[] = {"Yes","No"};
+
+                class Yes { label = "Yes";};
+                class No { label = "No";};
+            };
+        };
+    };
 };
