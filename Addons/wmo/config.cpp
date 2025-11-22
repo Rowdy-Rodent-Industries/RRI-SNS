@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 class CfgPatches
 {
 	class BW_adaptive_roadway
@@ -14,44 +16,7 @@ class CfgPatches
 		weapons[]={};
 	};
 };
-class CfgFunctions
-{
-	class BW_WMO
-	{
-		class BW_WalkableMovingObjects
-		{
-			file="\BW_WalkableMovingObjects";
-			class initWMO
-			{
-				postInit=1;
-			};
-			class setPosi
-			{
-			};
-			class collision
-			{
-			};
-			class handleDamage
-			{
-			};
-			class getParent
-			{
-			};
-			class isWmoObject
-			{
-			};
-			class leave
-			{
-			};
-			class exit
-			{
-			};
-			class getsRoadway
-			{
-			};
-		};
-	};
-};
+
 class CfgVehicles
 {
 	class Items_base_F;
@@ -80,6 +45,8 @@ class CfgVehicles
 		accuracy=0.2;
 	};
 };
+
+#include "CfgEventHandlers.hpp"
 class cfgMods
 {
 	author="Bloodwyn";

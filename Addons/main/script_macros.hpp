@@ -97,3 +97,6 @@
 
 //Ace Cargo
 #define CARGO_XX(a,b) class _xx_##a## {type = QUOTE(a); amount = b;}
+
+#define ADDON DOUBLES(PREFIX,COMPONENT)
+#define MAIN_ADDON DOUBLES(PREFIX,main)

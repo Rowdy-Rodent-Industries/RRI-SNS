@@ -1,0 +1,10 @@
+PREP(empty);
+PREP(collision);
+PREP(exit);
+PREP(getparent);
+PREP(getsroadway);
+PREP(handledamage);
+PREP(initwmo);
+PREP(iswmoobject);
+PREP(leave);
+PREP(setposi);
