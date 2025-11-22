@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 params ["_unit", "_selectionName", "_damage", "_source", "_projectile", "_hitPartIndex", "_instigator"];
 
 if (!local _unit) exitwith {};

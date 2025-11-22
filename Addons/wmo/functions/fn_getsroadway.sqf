@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
 	Author: Bloodwyn http://steamcommunity.com/profiles/76561198055205907/
 

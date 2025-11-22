@@ -1,3 +1,5 @@
+#include "..\script_component.hpp"
+
 if !(isNull BW_anker)then{
     BW_WMO_collision = true;
     BW_WMO_exit apply {BW_anker call _x;};
